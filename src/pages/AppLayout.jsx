@@ -1,13 +1,16 @@
 import React from 'react'
 import AppNav from '../components/AppNav'
+import Sidebar from '../components/Sidebar'
+import styles from './AppLayout.module.css'
+import Map from '../components/Map'
 
 const AppLayout = () => {
   return (
-    <div>
-      <AppNav />
-      <p>App</p>
+    <div className={styles.app}>
+      <Sidebar />
+      <Map />
     </div>
   )
 }
 
-export default AppLayout
+export default AppLayout;
